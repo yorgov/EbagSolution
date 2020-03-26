@@ -16,7 +16,7 @@ namespace Runner
 
         static int[] _minutesToSleepInterval = new[] { 15, 30 };
 
-        const string _logFilePath = @"EbagLog.txt";
+        const string _logFilePath = @"\EbagLog.txt";
 
         static void Main(string[] args)
         {
