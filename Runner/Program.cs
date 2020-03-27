@@ -44,6 +44,7 @@ namespace Runner
                     if (timeSlotsElement.Text == text)
                     {
                         var timeToSleep = new Random().Next(_minutesToSleepInterval[0], _minutesToSleepInterval[1]);
+                        countIndex++;
                         LogMessage($"No Slots Available sleeping for {timeToSleep} minutes");
                         Thread.Sleep(TimeSpan.FromMinutes(timeToSleep));
                     }
