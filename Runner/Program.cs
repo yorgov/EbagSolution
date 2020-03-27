@@ -14,7 +14,7 @@ namespace Runner
         const string _sender = "ivan.yorgov";
         const string _password = "rtmW5!3IY";
 
-        static int[] _minutesToSleepInterval = new[] { 15, 30 };
+        static int[] _minutesToSleepInterval = new[] { 5, 10 };
 
         const string _logFilePath = @"\EbagLog.txt";
 
@@ -51,9 +51,9 @@ namespace Runner
                     {
                         LogMessage("Slot Found Sending email");
                         SendMail();
-                        var remainingTime = GetRemainingTime();
-                        LogMessage($"Waiting for {remainingTime.Hours:D2} hours, {remainingTime.Minutes:D2} minutes and {remainingTime.Seconds:D2} seconds");
-                        Thread.Sleep((int)remainingTime.TotalMilliseconds);
+                        // var remainingTime = GetRemainingTime();
+                        // LogMessage($"Waiting for {remainingTime.Hours:D2} hours, {remainingTime.Minutes:D2} minutes and {remainingTime.Seconds:D2} seconds");
+                        // Thread.Sleep((int)remainingTime.TotalMilliseconds);
                     }
 
                 }
